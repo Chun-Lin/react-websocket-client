@@ -24,13 +24,15 @@ export default class Chat extends Component {
 
   render() {
     return (
-      <div>
-        <div className="messages">
-          {this.state.messages.map(message => {
-            return <div key={shortid.generate()}>{message}</div>
-          })}
+      <>
+        <div>
+          <div className="messages">
+            {this.state.messages.map(message => {
+              return <div key={shortid.generate()}>{message}</div>
+            })}
+          </div>
         </div>
-      </div>
+      </>
     )
   }
 }
